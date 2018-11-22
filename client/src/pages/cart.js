@@ -9,7 +9,9 @@ import BookTrips from '../containers/book-trips';
 
 export const GET_CART_ITEMS = gql`
   query GetCartItems {
-    cartItems @client
+    cartItems @client {
+      id
+    }
   }
 `;
 
