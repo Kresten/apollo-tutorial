@@ -2,9 +2,9 @@
 
 exports[`Mutations books trips 1`] = `
 Object {
-  "data": null,
+  "data": undefined,
   "errors": Array [
-    [GraphQLError: Cannot return null for non-nullable field TripUpdateResponse.failure.],
+    [ValidationError: Cannot query field "failure" on type "TripUpdateResponse".],
   ],
   "extensions": undefined,
   "http": Object {
@@ -17,26 +17,10 @@ Object {
 
 exports[`Queries fetches list of launches 1`] = `
 Object {
-  "data": Object {
-    "launches": Object {
-      "cursor": "1143239400",
-      "hasMore": false,
-      "launches": Array [
-        Object {
-          "id": "1",
-          "isBooked": true,
-          "mission": Object {
-            "missionPatch": "https://images2.imgbox.com/40/e3/GypSkayF_o.png",
-            "name": "FalconSat",
-          },
-          "rocket": Object {
-            "fullName": "Falcon 1",
-          },
-        },
-      ],
-    },
-  },
-  "errors": undefined,
+  "data": undefined,
+  "errors": Array [
+    [ValidationError: Cannot query field "fullName" on type "Rocket". Did you mean "name"?],
+  ],
   "extensions": undefined,
   "http": Object {
     "headers": Headers {
